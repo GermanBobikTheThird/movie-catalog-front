@@ -1,0 +1,146 @@
+.profile-page {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    color: white;
+}
+
+.profile-header h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.tabs-container {
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 1rem;
+    color: #888;
+    cursor: pointer;
+    white-space: nowrap;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.tab-btn.active {
+    color: #e50914;
+    border-bottom-color: #e50914;
+    font-weight: bold;
+}
+
+.table-wrapper {
+    background: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.media-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.media-table th {
+    text-align: left;
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+    color: #666;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.media-table td {
+    padding: 1rem;
+    border-bottom: 1px solid #222;
+}
+
+.title-cell:hover .title-bold {
+    color: #e50914;
+    text-decoration: underline;
+}
+
+.table-poster {
+    width: 45px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 4px;
+    background: #333;
+}
+
+.title-bold {
+    font-weight: bold;
+    display: block;
+}
+
+.title-sub {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.rating-badge {
+    background: #333;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.move-select {
+    background: #222;
+    color: white;
+    border: 1px solid #444;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.btn-delete {
+    background: none;
+    border: 1px solid #444;
+    color: #666;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background: #e50914;
+    color: white;
+    border-color: #e50914;
+}
+
+.empty-list {
+    padding: 3rem;
+    text-align: center;
+    color: #555;
+}
+
+.table-row {
+    display: table-row; /* Возвращаем стандартное поведение */
+}
+
+.title-cell {
+    display: flex; /* Флекс внутри ячейки — это хорошо для иконки и текста */
+    align-items: center;
+    gap: 1rem;
+    /* НЕ пишите здесь width: 100% */
+}
+
+.actions-cell {
+    white-space: nowrap; /* Запрещает кнопкам переноситься на новую строку */
+    width: 1%;           /* Трюк: ячейка сожмется до минимально возможной ширины контента */
+    text-align: right;
+}
+
+.actions-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 12px;
+}
