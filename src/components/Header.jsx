@@ -24,31 +24,20 @@ const Header = () => {
                 <Link to="/" className="logo">
                     MovieCatalog
                 </Link>
+
                 <form
+                    className="search-form"
                     onSubmit={handleSearch}
-                    style={{ flex: 1, maxWidth: '400px', margin: '0 20px' }}
                 >
                     <Input
                         placeholder={t('catalog.searchPlaceholder')}
                         value={searchQuery}
                         onChange={(e) => setSearchQuery(e.target.value)}
-                        style={{
-                            padding: '8px 12px',
-                            fontSize: '14px',
-                            backgroundColor: '#222',
-                            borderColor: '#444',
-                        }}
+                        id='search-panel'
                     />
                 </form>
-                {/* ------------------- */}
 
-                <div
-                    style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '20px',
-                    }}
-                >
+                <div className="header-actions">
                     <nav className="nav">
                         {user ? (
                             <Link
