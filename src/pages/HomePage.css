@@ -43,7 +43,7 @@
 
 @media (max-width: 900px) {
     .home-page {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
     }
     .movie-grid {
         grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
