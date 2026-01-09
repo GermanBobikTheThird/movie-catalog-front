@@ -1,4 +1,4 @@
-import './UI.css';
+import './ui.css';
 
 const Button = ({ children, variant = 'primary', ...props }) => {
     return (

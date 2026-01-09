@@ -1,4 +1,4 @@
-import './UI.css';
+import './ui.css';
 
 const Select = ({ options = [], ...props }) => {
     return (
